@@ -3,49 +3,158 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Pagin Demo</title>
     <link rel="stylesheet" href="css/bootstrap.css">
   </head>
   <body>
-    <div class="class container">
-    <h1 class="text-center">FrameWork de CSS - Bootstrap</h1>
-    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
-    <br>
-    <hr>
-    <br>
+    <!--Inicio de Menu-->
 
-    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!--Fin de Menu-->
+
+    <!--Inicio de carusel-->
+
+    <div id="carouselExampleCaptions" class="carousel slide ">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/slider1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mundo de Mario</h5>
+              <p> ¡Bien, bien, bien! Si son los fracasados favoritos de Brooklyn: ¡los estúpidos hermanos Mario!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/slider2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Lost the Strom</h5>
+              <p>Y cuando la tormenta de arena haya pasado, tú no comprenderás cómo has logrado cruzarla con vida. ¡No! Ni siquiera estarás seguro de que la tormenta haya cesado de verdad. </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/slider3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Pit Survival</h5>
+              <p>¿De qué sirve, joven, contar, si no es para borrar de la memoria todo lo que no sea el origen y el fin? </p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!--fin de carusel-->
+    <br>
+    <!--Inicio de contenido-->
     <div class="class row">
-        <div class="class col-md-3 col-sm-6 col-6">
-            <img src="img/Logo.png" class="img-fluid" alt="...">
+        <div class="class col-lg-4 col-3">
+            <hr>
         </div>
-        <div class="class col-md-3 col-sm-6 col-6">
-            <img src="img/Logo.png" class="img-fluid" alt="...">
+        <div class="class col-lg-4 col-6">
+            <h2 class="text-center">PAQUETES</h2>
         </div>
-        <div class="class col-md-3 col-sm-6 col-6">
-            <img src="img/Logo.png" class="img-fluid" alt="...">
-        </div>
-        <div class="class col-md-3 col-sm-6 col-6">
-            <img src="img/Logo.png" class="img-fluid" alt="...">
+        <div class="class col-lg-4 col-3">
+            <hr>
         </div>
     </div>
     <br>
-    <hr>
-    <br>
-    <!--segundo ejercicio, colocar 3 elementos (imagen, texto, imagen)-->
+    <!--contenido con imagenes-->
     <div class="class row">
-        <div class="class col-md-4">
-            <img src="img/Logo.png" class="img-fluid" alt="...">
+        <div class="class col-md-3">
+
         </div>
-        <div class="class col-md-4">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae saepe ipsum quos ab eaque voluptatem quis non nesciunt id quam officia repudiandae atque nam temporibus, consectetur magni, dolores, exercitationem alias! Quis, et ratione sequi sed laboriosam id fugiat esse laborum sit, nostrum, labore aliquid aut nulla deleniti blanditiis itaque expedita.</p>
+        <div class="class col-md-2 col-4 text-center">
+            <img src="img/pack1.png" class="img-thumbnail rounded-circle" alt="...">
+        <b><p>ZELDA</p></b>
         </div>
-        <div class="class col-md-4">
-            <img src="img/Logo.png" class="img-fluid " alt="...">
+        <div class="class col-md-2 col-4 text-center">
+            <img src="img/pack2.jpg" class="img-thumbnail rounded-circle" alt="...">
+        <b><p>RIDIN</p></b>
+        </div>
+        <div class="class col-md-2 col-4 text-center">
+            <img src="img/pack3.jpg" class="img-thumbnail rounded-circle" alt="...">
+        <b><p>GOOSE</p></b>
+        </div>
+        <div class="class col-md-3">
+            
+        </div>
+        
+    </div>
+     <!--Fin de contenido-->
+     <br>
+     <!--Inicio de articulos-->
+     <div class="class row">
+        <div class="class col-lg-4 col-3">
+            <hr>
+        </div>
+        <div class="class col-lg-4 col-6">
+            <h2 class="text-center">¡ LO MAS VENDIDO !</h2>
+        </div>
+        <div class="class col-lg-4 col-3">
+            <hr>
         </div>
     </div>
-</div>
+    <div class="class row">
+        <!--Inicio de las cards-->
+        <!--1ra card-->
+        <div class="card text-center" style="width: 18rem;">
+            <img src="img/Venta1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h1 class="card-title">PS5</h1>
+              <p class="card-text">Procesador de 8 núcleos a hasta 3,5 GHz (frecuencia variable) personalizado con microarquitectura AMD Zen 2 y fotolitografía de 7 nm</p>
+              <h4 class="card-text">$800 usd</h4>
+              <del><p class="card-text">$800 usd</p></del>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+
+    </div>
+     <!--Inicio de articulos-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
   </body>
 </html>
